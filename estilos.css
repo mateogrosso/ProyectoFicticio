@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;      /* que el body ocupe toda la altura */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;           /* ocupa todo el espacio disponible */
+}
+
+footer {
+    margin-top: auto;  /* empuja el footer al final */
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    padding: 10px 15px;
+    border-bottom: 1px solid #cccccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color:rgb(154, 100, 1);
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* espacio entre logo y título */
+}
+
+.marca h1 {
+    font-size:larger;
+    font-style: italic;
+}
+
+.marca img {
+    flex: 1;
+    width: 100px;
+    height: auto;
+}
+
+.navegador ul {
+    align-items:center;
+    text-align: right;
+    list-style: none; /* saca los puntitos de la lista */
+    display: flex;
+    gap: 30px; /* es la separacion entre cada link */
+}
+
+ ul li a {
+    text-decoration: none;
+    font-size: smaller;
+    color: white;
+}
+
+.navegador ul li img{
+    flex: 1;
+    width: 50px;
+    height: auto;
+}
+
+.pieDePagina ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items:end;
+    list-style: none;
+    width: 100%;
+    padding: 10px 15px;
+    border-top: 1px solid #cccccc;
+    gap: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    color: white;
+    background-color:rgb(154, 100, 1);
+}
+
+
+.catalogoProductos{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.catalogoProductos h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:larger;
+    font-style: italic;
+}
+
+.listaProductos {
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.productoIndividual {
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    box-shadow: 20px 20px 40px #e0e0e0;
+    margin: 20px 0;
+    background-color: bisque;
+}
+
