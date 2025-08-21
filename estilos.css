@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 html, body {
     height: 100%;      /* que el body ocupe toda la altura */
     margin: 0;
@@ -19,55 +21,63 @@ footer {
     margin-top: auto;  /* empuja el footer al final */
 }
 
-.navegador {
-    display: flex;
-    justify-content: space-between; 
+/*HEADER*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     width: 100%;
-    padding: 10px 15px;
-    border-bottom: 1px solid #cccccc;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    padding: 15px 30px;
     background-color:rgb(154, 100, 1);
 }
 
-.marca {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* espacio entre logo y título */
+.header-titulo {
+    justify-self: start;
 }
 
-.marca h1 {
-    font-size:larger;
+.marca-titulo {
     font-style: italic;
+    color: white;
+    font-size: 1.5rem;
 }
 
-.marca img {
-    flex: 1;
-    width: 100px;
+.header-logo {
+    justify-self: center;
+}
+
+.header-logo img{
+    width: 50px;
     height: auto;
+} 
+
+.header-navegador {
+    justify-self: end;
 }
 
-.navegador ul {
-    align-items:center;
-    text-align: right;
-    list-style: none; /* saca los puntitos de la lista */
+.header-lista{
     display: flex;
-    gap: 30px; /* es la separacion entre cada link */
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
 }
 
- ul li a {
+.header-lista li a{
     text-decoration: none;
-    font-size: smaller;
+    font-size: 0.9rem;
+    font-style: italic;
     color: white;
 }
 
-.navegador ul li img{
-    flex: 1;
-    width: 50px;
+.carritoCompras-logo{
+    width: 20px;
     height: auto;
 }
 
+/*BODY*/
+
+/*FOOTER*/
 .pieDePagina ul{
     display: flex;
     flex-direction: row;
@@ -85,6 +95,8 @@ footer {
 }
 
 
+/*PRODUCTOS*/
+
 .catalogoProductos{
     display:flex;
     flex-direction: column;
@@ -99,9 +111,9 @@ footer {
 }
 
 .listaProductos {
-    display: flex;
-    flex-direction: row;
-    gap:30px;
+    display: grid;
+    grid-template-columns: 500px 500px 500px;;
+    gap:50px;
 }
 
 .productoIndividual {
