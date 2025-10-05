@@ -51,33 +51,35 @@ La aplicación ahora funciona como una **Single Page Application (SPA)** conecta
 ---
 
 ## 🧱 Arquitectura del Proyecto
+
+```plaintext
 📦 Mueblería-Hermanos-Jota/
-├── backend/ # Servidor Express (API REST)
-│ ├── src/
-│ │ ├── app.js
-│ │ ├── server.js
-│ │ ├── controllers/
-│ │ │ └── productos.controller.js
-│ │ ├── routes/
-│ │ │ └── productosRoutes.js
-│ │ ├── data/
-│ │ │ └── productos.js
-│ │ └── middlewares/
-│ │ ├── logger.js
-│ │ └── error404.js
-├── client/ # Aplicación React (SPA)
-│ ├── src/
-│ │ ├── App.js
-│ │ ├── index.jsx
-│ │ ├── Components/
-│ │ │ ├── Navbar.jsx
-│ │ │ ├── Home.jsx
-│ │ │ ├── ProductList.jsx
-│ │ │ ├── ProductDetail.jsx
-│ │ │ └── ContactForm.jsx
-│ │ ├── Services/
-│ │ │ └── ProductService.js
-│ │ └── styles/
-│ └── package.json
-├── ETAPA_1/ # Versión inicial (HTML, CSS, JS puro)
+├── backend/              # Servidor Express (API REST)
+│   ├── src/
+│   │   ├── app.js
+│   │   ├── server.js
+│   │   ├── controllers/
+│   │   │   └── productos.controller.js
+│   │   ├── routes/
+│   │   │   └── productosRoutes.js
+│   │   ├── data/
+│   │   │   └── productos.js
+│   │   └── middlewares/
+│   │       ├── logger.js
+│   │       └── error404.js
+├── client/               # Aplicación React (SPA)
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── index.jsx
+│   │   ├── Components/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Home.jsx
+│   │   │   ├── ProductList.jsx
+│   │   │   ├── ProductDetail.jsx
+│   │   │   └── ContactForm.jsx
+│   │   ├── Services/
+│   │   │   └── ProductService.js
+│   │   └── styles/
+│   └── package.json
+├── ETAPA_1/              # Versión inicial (HTML, CSS, JS puro)
 └── README.md
